@@ -301,7 +301,7 @@ a {
 }
 
 .skill {
-  background-image: url(/image/skill-bg.jpg);
+  background-image: url("https://github.com/SatoshiMatsuykane/my_portfolio/blob/main/image/skill-bg.jpg?raw=true");
   background-size: cover;
   background-position: center;
   height: auto;
