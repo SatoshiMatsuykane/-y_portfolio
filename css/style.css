@@ -225,7 +225,7 @@ a {
 }
 
 .fv .kv-wrapper {
-  background-image: url(/image/fv-img.jpg);
+  background-image: url("https://github.com/SatoshiMatsuykane/my_portfolio/blob/main/image/fv-img.jpg?raw=true");
   background-size: cover;
   background-position: center;
   height: 700px;
