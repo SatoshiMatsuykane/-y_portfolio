@@ -1,0 +1,99 @@
+.header {
+    .header-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background-color: cl(black);
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        &.active {
+            right: 0;
+            opacity: 1;
+            transform: translateX(0);
+            visibility: visible;
+        }
+    }
+    .nav-list {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .nav-item {
+        list-style-type: none;
+    }
+    a {
+        display: block;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        text-decoration: none;
+        transition: transform .3s;
+        color: cl(white);
+        font-size: 3rem;
+        @include overTab {
+            font-size: 4rem;
+        }
+        &:hover {
+            color: cl(red);
+            transition: color .3s;
+        }
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+    .menu {
+        position: fixed;
+        top: 20px;
+        left: 25px;
+        width: 35px;
+        height: 22px;
+        z-index: 10;
+        &.open {
+            span {
+                &:nth-child(1){
+                    transform: translateY(10px) rotate(45deg);
+                    background-color: cl(white);
+                    transition: transform .3s, background-color .3s;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                    transition: opacity .3s;
+                }
+                &:nth-child(3){
+                    transform: translateY(-10px) rotate(-45deg);
+                    background-color: cl(white);
+                    transition: transform .3s background-color .3s;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: cl(black);
+            z-index: 10;
+            &:nth-child(1){
+                top: 0px;
+            }
+            &:nth-child(2){
+                top: 10px;
+            }
+            &:nth-child(3){
+                bottom: 0px;
+            }
+        }
+    }
+}
+

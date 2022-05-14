@@ -1,0 +1,33 @@
+.section-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include overTab {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.content-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+	border-bottom: 2px solid cl(black);
+	display: inline-block;
+    @include overTab {
+        font-size: 3.6rem;
+        margin-bottom: 30px;
+    }
+}
+
+.lines {
+    line-height: 2;
+}

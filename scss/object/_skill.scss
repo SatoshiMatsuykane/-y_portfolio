@@ -1,0 +1,78 @@
+.skill {
+    background-image: url(/image/skill-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 50px 0;
+    @include overTab {
+        padding: 100px 0;
+    }
+    .skill-cont {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .skill-list {
+        @include overTab {
+            display: grid;
+            grid-template-columns: 350px 350px 350px;
+            grid-template-rows: 550px 550px;
+            grid-row-gap: 5px;
+            grid-column-gap: 5px;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+    }
+    .skill-item {
+        margin: 20px 5px;
+        box-sizing: border-box;
+        border: 1px solid cl(lightgrey);
+        border-radius: 5px;
+        background-color: cl(white);
+        @include overTab {
+        }
+        &:hover {
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            transform: translateY(-10px);
+            transition-duration: 0.3s;
+        }
+        .skill-title {
+            text-align: center;
+            padding-top: 30px;
+            font-weight: bold;
+            font-size: 1.8rem;
+            @include overTab {
+                font-size: 2.5rem;
+                padding-top: 50px;
+            }
+        }
+        .skill-image {
+            margin: 0 auto;
+            padding-top: 30px;
+            width: 100px;
+        }
+        .skill-text {
+            margin-top: 20px;
+            padding: 20px 0 20px 20px;
+            color: cl(grey);
+            font-weight: bold;
+            text-align: left;
+            font-size: 1.2rem;
+            @include overTab {
+                font-size: 1.6rem;
+            }
+            span {
+                padding-left: 10px;
+                font-size: 1rem;
+                @include overTab {
+                    font-size: 1.3rem;
+                    padding-left: 20px;
+                }
+            }
+            .line {
+                line-height: 1.5;
+            }
+        }
+    }
+}

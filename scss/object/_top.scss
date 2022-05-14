@@ -1,0 +1,23 @@
+.fv {
+    .kv-wrapper {
+        background-image: url(/image/fv-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        position: relative;
+    }
+    .main-copy {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        font-weight: bold;
+        font-size: 3.5rem;
+        text-align: center;
+        color: cl(black);
+        width: 100%;
+        @include overTab {
+            font-size: 7rem;
+        }
+    }
+}
